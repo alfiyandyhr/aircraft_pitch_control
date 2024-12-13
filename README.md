@@ -1,2 +1,3 @@
-# aircraft_pitch_control
-This repository contains my 
+# Aircraft Pitch Control via Static and Reinforcement Learning-Based Adaptive PID Controllers
+
+This repository contains code implementations for a project focused on aircraft pitch control using both traditional static Proportional-Integral-Derivative (PID) controllers and Reinforcement Learning (RL)-based adaptive PID controllers. The project involves developing a 6-DOF non-linear aircraft dynamics model based on Cessna-172 stability derivatives, deriving a linearized system, and designing PID controllers for pitch angle tracking. Two methods are explored: manual tuning of static PID gains and RL algorithm-driven adaptive PID gains. The code includes simulations, controller design scripts, and analysis tools for comparing the performance of these control strategies.
