@@ -1,0 +1,765 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage{breqn}
+\usepackage{svg}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\begin{document}
+
+\twocolumn
+\section{Cessna-172 Data}
+
+\centering
+
+\vfill\null
+\textbf{Wing Data}
+\begin{equation}
+\mathrm{wing\ area} \quad S = 16.1651\ m
+\end{equation}
+\begin{equation}
+\mathrm{wing span} \quad b = 10.9118\ m
+\end{equation}
+\begin{equation}
+\mathrm{MAC} \quad c = 1.4935\ m
+\end{equation}
+
+\textbf{Mass Properties Data}
+\begin{equation}
+\mathrm{Mass} \quad m = 1043.3\ kg
+\end{equation}
+\begin{equation}
+\mathrm{CG}_{\mathrm{mac}} = 0.3
+\end{equation}
+\begin{equation}
+I_{\mathrm{XX}} = 1285.3\ kgm^2
+\end{equation}
+\begin{equation}
+I_{\mathrm{YY}} = 1824.9\ kgm^2
+\end{equation}
+\begin{equation}
+I_{\mathrm{ZZ}} = 2666.9\ kgm^2
+\end{equation}
+\begin{equation}
+I_{\mathrm{XZ}} = 0.0\ kgm^2
+\end{equation}
+\begin{equation}
+y_{\mathrm{CG}} = 0.0\ m
+\end{equation}
+\begin{equation}
+z_{\mathrm{CG}} = 0.2\ m
+\end{equation}
+\begin{equation}
+g = 9.80665\ m/s^2
+\end{equation}
+
+\vfill\null
+\textbf{Engine Data}
+\begin{equation}
+v_{\mathrm{ref}} = 51.4\ m/s
+\end{equation}
+\begin{equation}
+\rho_{\mathrm{ref}} = 1.225\ kg/m^3
+\end{equation}
+\begin{equation}
+n_{\mathrm{v}} = -1.0
+\end{equation}
+\begin{equation}
+n_{\mathrm{\rho}} = 0.75
+\end{equation}
+\begin{equation}
+\alpha_{\mathrm{F}} = 1.0^{\mathrm{o}}
+\end{equation}
+\begin{equation}
+X_{\mathrm{F}} = 1.0\ m
+\end{equation}
+\begin{equation}
+Z_{\mathrm{F}} = 0.0\ m
+\end{equation}
+\begin{equation}
+T_{\mathrm{max}} = 2070.0\ N
+\end{equation}
+
+\vfill\null
+\textbf{Aerodynamic Derivative: Lift Coefficient}
+\begin{equation}
+C_{\mathrm{L}_{\mathrm{0}}} = 0.31
+\end{equation}
+\begin{equation}
+C_{\mathrm{L}_{\mathrm{\alpha}}} = 5.143\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{L}_{\mathrm{\delta_{\mathrm{e}}}}} = 0.43\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{L}_{\mathrm{\dot{\alpha}}}} = 0.0\ s/rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{L}_{\mathrm{q}}} = 3.9\ s/rad
+\end{equation}
+
+\vfill\null
+\textbf{Aerodynamic Derivative: Drag Coefficient}
+\begin{equation}
+C_{\mathrm{D}_{\mathrm{0}}} = 0.031
+\end{equation}
+\begin{equation}
+C_{\mathrm{D}_{\mathrm{\alpha}}} = 0.13\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{D}_{\mathrm{\delta_{\mathrm{e}}}}} = 0.06\ /rad
+\end{equation}
+
+\vfill\null
+\textbf{Aerodynamic Derivative: Pitching Moment Coefficient}
+\begin{equation}
+C_{\mathrm{m}_{\mathrm{0}}} = -0.015
+\end{equation}
+\begin{equation}
+C_{\mathrm{m}_{\mathrm{\alpha}}} = -0.89\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{m}_{\mathrm{\delta_{\mathrm{e}}}}} = -1.28\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{m}_{\mathrm{\dot{\alpha}}}} = -7.27\ s/rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{m}_{\mathrm{q}}} = -12.4\ s/rad
+\end{equation}
+
+\vfill\null
+\textbf{Aerodynamic Derivative: Side Force Coefficient}
+\begin{equation}
+C_{\mathrm{Y}_{\mathrm{\beta}}} = -0.31\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{Y}_{\mathrm{\delta_{\mathrm{a}}}}} = 0.0\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{Y}_{\mathrm{\delta_{\mathrm{r}}}}} = 0.187\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{Y}_{\mathrm{p}}} = -0.037\ s/rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{Y}_{\mathrm{r}}} = 0.21\ s/rad
+\end{equation}
+
+\vfill\null
+\textbf{Aerodynamic Derivative: Rolling Moment Coefficient}
+\begin{equation}
+C_{\mathrm{l}_{\mathrm{\beta}}} = -0.089\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{l}_{\mathrm{\delta_{\mathrm{a}}}}} = -0.178\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{l}_{\mathrm{\delta_{\mathrm{r}}}}} = 0.0147\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{l}_{\mathrm{p}}} = -0.47\ s/rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{l}_{\mathrm{r}}} = 0.096\ s/rad
+\end{equation}
+
+\vfill\null
+\textbf{Aerodynamic Derivative: Yawing Moment Coefficient}
+\begin{equation}
+C_{\mathrm{n}_{\mathrm{\beta}}} = 0.065\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{n}_{\mathrm{\delta_{\mathrm{a}}}}} = -0.053\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{n}_{\mathrm{\delta_{\mathrm{r}}}}} = -0.0657\ /rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{n}_{\mathrm{p}}} = -0.03\ s/rad
+\end{equation}
+\begin{equation}
+C_{\mathrm{n}_{\mathrm{r}}} = -0.099\ s/rad
+\end{equation}
+
+\newpage
+
+\onecolumn
+\section{Non-linear Coupled 6-DOF System of Equations}
+
+\begin{dmath}
+\mathcal{L}_{\phi}=\left(\begin{array}{ccc} 1 & 0 & 0\\ 0 & \cos\left(\phi \right) & \sin\left(\phi \right)\\ 0 & -\sin\left(\phi \right) & \cos\left(\phi \right) \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+\mathcal{L}_{\theta}=\left(\begin{array}{ccc} \cos\left(\theta \right) & 0 & -\sin\left(\theta \right)\\ 0 & 1 & 0\\ \sin\left(\theta \right) & 0 & \cos\left(\theta \right) \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+\mathcal{L}_{\psi}=\left(\begin{array}{ccc} \cos\left(\psi \right) & \sin\left(\psi \right) & 0\\ -\sin\left(\psi \right) & \cos\left(\psi \right) & 0\\ 0 & 0 & 1 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+\mathcal{L}_{\mathrm{E}\rightarrow\mathrm{B}}=\mathcal{L}_{\phi}\,\mathcal{L}_{\theta}\,\mathcal{L}_{\psi}
+\end{dmath}
+
+\begin{dmath}
+\mathcal{L}_{\mathrm{B}\rightarrow\mathrm{E}}=\mathcal{L}_{\psi}^{-1}\,\mathcal{L}_{\theta}^{-1}\,\mathcal{L}_{\phi}^{-1}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{v}_{\mathrm{E}}&=\left(\begin{array}{c} \dot{x}\\ \dot{y}\\ \dot{z} \end{array}\right)=\mathcal{L}_{\mathrm{B}\rightarrow\mathrm{E}}\,\overrightarrow{v}_{\mathrm{B}}=\mathcal{L}_{\mathrm{B}\rightarrow\mathrm{E}}\,\left(\begin{array}{c} u\\ v\\ w \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\dot{x}=w\,\left(\sin\left(\phi \right)\,\sin\left(\psi \right)+\cos\left(\phi \right)\,\cos\left(\psi \right)\,\sin\left(\theta \right)\right)-v\,\left(\cos\left(\phi \right)\,\sin\left(\psi \right)-\cos\left(\psi \right)\,\sin\left(\phi \right)\,\sin\left(\theta \right)\right)+u\,\cos\left(\psi \right)\,\cos\left(\theta \right)
+\end{dmath}
+
+\begin{dmath}
+\dot{y}=v\,\left(\cos\left(\phi \right)\,\cos\left(\psi \right)+\sin\left(\phi \right)\,\sin\left(\psi \right)\,\sin\left(\theta \right)\right)-w\,\left(\cos\left(\psi \right)\,\sin\left(\phi \right)-\cos\left(\phi \right)\,\sin\left(\psi \right)\,\sin\left(\theta \right)\right)+u\,\cos\left(\theta \right)\,\sin\left(\psi \right)
+\end{dmath}
+
+\begin{dmath}
+\dot{z}=w\,\cos\left(\phi \right)\,\cos\left(\theta \right)-u\,\sin\left(\theta \right)+v\,\cos\left(\theta \right)\,\sin\left(\phi \right)
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{W}_{\mathrm{B}}&=\mathcal{L}_{\mathrm{E\rightarrow B}}\,\overrightarrow{W}_{\mathrm{E}}=\mathcal{L}_{\mathrm{E\rightarrow B}}\,\left(\begin{array}{c} 0\\ 0\\ m\,g \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\overrightarrow{W}_{\mathrm{B}}=\left(\begin{array}{c} -m\,g\,\sin\left(\theta \right)\\ m\,g\,\cos\left(\theta \right)\,\sin\left(\phi \right)\\ m\,g\,\cos\left(\phi \right)\,\cos\left(\theta \right) \end{array}\right)
+\end{dmath}
+
+\newpage
+
+\begin{dmath}
+\overrightarrow{F}_{\mathrm{ext}}=\overrightarrow{F}_{\mathrm{aero}}+\overrightarrow{F}_{\mathrm{thrust}}+\overrightarrow{W}_{\mathrm{B}}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{F}_{\mathrm{ext}}&=\left(\begin{array}{c} F_{\mathrm{ext,x}}\\ F_{\mathrm{ext,y}}\\ F_{\mathrm{ext,z}} \end{array}\right)=\left(\begin{array}{c} F_{\mathrm{aero,x}}+F_{\mathrm{thrust,x}}-m\,g\,\sin\left(\theta \right)\\ F_{\mathrm{aero,y}}+F_{\mathrm{thrust,y}}+m\,g\,\cos\left(\theta \right)\,\sin\left(\phi \right)\\ F_{\mathrm{aero,z}}+F_{\mathrm{thrust,z}}+m\,g\,\cos\left(\phi \right)\,\cos\left(\theta \right) \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\overrightarrow{M}_{\mathrm{ext}}=\overrightarrow{M}_{\mathrm{aero}}+\overrightarrow{M}_{\mathrm{thrust}}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{M}_{\mathrm{ext}}&=\left(\begin{array}{c} M_{\mathrm{ext,x}}\\ M_{\mathrm{ext,y}}\\ M_{\mathrm{ext,z}} \end{array}\right)=\left(\begin{array}{c} M_{\mathrm{aero,x}}+M_{\mathrm{thrust,x}}\\ M_{\mathrm{aero,y}}+M_{\mathrm{thrust,y}}\\ M_{\mathrm{aero,z}}+M_{\mathrm{thrust,z}} \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{\Omega}_{\mathrm{B}}&=\left(\begin{array}{c} p\\ q\\ r \end{array}\right)=\left(\begin{array}{c} \dot{\phi }-\dot{\psi }\,\sin\left(\theta \right)\\ \dot{\theta }\,\cos\left(\phi \right)+\dot{\psi }\,\cos\left(\theta \right)\,\sin\left(\phi \right)\\ \dot{\psi }\,\cos\left(\phi \right)\,\cos\left(\theta \right)-\dot{\theta }\,\sin\left(\phi \right) \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\dot{\phi }=p+r\,\cos\left(\phi \right)\,\mathrm{tan}\left(\theta \right)+q\,\sin\left(\phi \right)\,\mathrm{tan}\left(\theta \right)
+\end{dmath}
+
+\begin{dmath}
+\dot{\theta }=q\,\cos\left(\phi \right)-r\,\sin\left(\phi \right)
+\end{dmath}
+
+\begin{dmath}
+\dot{\psi }=\frac{r\,\cos\left(\phi \right)+q\,\sin\left(\phi \right)}{\cos\left(\theta \right)}
+\end{dmath}
+
+\begin{dmath}
+\overrightarrow{F}_{\mathrm{ext}}=m\,\left(\dot{\overrightarrow{V}_{\mathrm{B}}} + \overrightarrow{\Omega}_{\mathrm{B}} \times \overrightarrow{V}_{\mathrm{B}} \right)
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{F}_{\mathrm{ext}}&=m\,\left( \left[\begin{array}{c} \dot{u}\\ \dot{v}\\ \dot{w} \end{array}\right] + \left[\begin{array}{c} \dot{p}\\ \dot{q}\\ \dot{r} \end{array}\right] \times \left[\begin{array}{c} u\\ v\\ w \end{array}\right] \right) = m\,\left(\begin{array}{c} \dot{u}+q\,w-r\,v\\ \dot{v}-p\,w+r\,u\\ \dot{w}+p\,v-q\,u \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+F_{\mathrm{aero,x}}+F_{\mathrm{thrust,x}}-m\,g\,\sin\left(\theta \right)=m\,\left(\dot{u}+q\,w-r\,v\right)
+\end{dmath}
+
+\begin{dmath}
+F_{\mathrm{aero,y}}+F_{\mathrm{thrust,y}}+m\,g\,\cos\left(\theta \right)\,\sin\left(\phi \right)=m\,\left(\dot{v}-p\,w+r\,u\right)
+\end{dmath}
+
+\begin{dmath}
+F_{\mathrm{aero,z}}+F_{\mathrm{thrust,z}}+m\,g\,\cos\left(\phi \right)\,\cos\left(\theta \right)=m\,\left(\dot{w}+p\,v-q\,u\right)
+\end{dmath}
+
+\begin{dmath}
+\overrightarrow{M}_{\mathrm{ext}}=I_{\mathrm{B}}\,\dot{\overrightarrow{\Omega}_{\mathrm{B}}} + \overrightarrow{\Omega}_{\mathrm{B}} \times \left(I_{\mathrm{B}}\,\overrightarrow{\Omega}_{\mathrm{B}}\right)
+\end{dmath}
+
+\begin{dmath}
+\overrightarrow{M}_{\mathrm{ext}}=\left[\begin{array}{ccc} I_{\mathrm{xx}} & 0 & -I_{\mathrm{xz}}\\ 0 & I_{\mathrm{yy}} & 0\\ -I_{\mathrm{zx}} & 0 & I_{\mathrm{zz}} \end{array}\right]\,\left[\begin{array}{c} \dot{p}\\ \dot{q}\\ \dot{r} \end{array}\right]+\left[\begin{array}{c} p\\ q\\ r \end{array}\right] \times \left(\left[\begin{array}{ccc} I_{\mathrm{xx}} & 0 & -I_{\mathrm{xz}}\\ 0 & I_{\mathrm{yy}} & 0\\ -I_{\mathrm{zx}} & 0 & I_{\mathrm{zz}} \end{array}\right]\,\left[\begin{array}{c} p\\ q\\ r \end{array}\right]\right)
+\end{dmath}
+
+\begin{dmath}
+M_{\mathrm{aero,x}}+M_{\mathrm{thrust,x}}=I_{\mathrm{xx}}\,\dot{p}-I_{\mathrm{xz}}\,\dot{r}-q\,\left(I_{\mathrm{zx}}\,p-I_{\mathrm{zz}}\,r\right)-I_{\mathrm{yy}}\,q\,r
+\end{dmath}
+
+\begin{dmath}
+M_{\mathrm{aero,y}}+M_{\mathrm{thrust,y}}=I_{\mathrm{yy}}\,\dot{q}+p\,\left(I_{\mathrm{zx}}\,p-I_{\mathrm{zz}}\,r\right)+r\,\left(I_{\mathrm{xx}}\,p-I_{\mathrm{xz}}\,r\right)
+\end{dmath}
+
+\begin{dmath}
+M_{\mathrm{aero,z}}+M_{\mathrm{thrust,z}}=I_{\mathrm{zz}}\,\dot{r}-I_{\mathrm{zx}}\,\dot{p}-q\,\left(I_{\mathrm{xx}}\,p-I_{\mathrm{xz}}\,r\right)+I_{\mathrm{yy}}\,p\,q
+\end{dmath}
+
+\newpage
+
+\begin{dmath}
+\bm{x}=(x, y, z, \phi, \theta, \psi, p, q, r, u, v, w)^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\bm{\dot{x}}&=f\left(\bm{x}\right)=f\left(x, y, z, \phi, \theta, \psi, p, q, r, u, v, w\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\left(\begin{array}{c} \dot{x}\\ \dot{y}\\ \dot{z}\\ \dot{\phi }\\ \dot{\theta }\\ \dot{\psi }\\ \dot{u}\\ \dot{v}\\ \dot{w}\\ \dot{p}\\ \dot{q}\\ \dot{r} \end{array}\right)=\left(\begin{array}{c} u\,C_{\theta }\,C_{\psi } + v\,\left(S_{\phi }\,S_{\theta }\,C_{\psi }-C_{\phi }\,S_{\psi }\right) + w\,\left(C_{\phi }\,S_{\theta }\,C_{\psi } + S_{\phi }\,S_{\psi }\right)\\ u\,C_{\theta }\,S_{\psi } + v\,\left(S_{\phi }\,S_{\theta }\,S_{\psi }+C_{\phi }\,C_{\psi }\right)+w\,\left(C_{\phi }\,S_{\theta }\,S_{\psi }-S_{\phi }\,C_{\psi }\right)\\ -u\,S_{\theta }+v\,S_{\phi }\,C_{\theta }+w\,C_{\phi }\,C_{\theta } \\ p+q\,S_{\phi }\,T_{\theta }+r\,C_{\phi }\,T_{\theta }\\ q\,C_{\phi }-r\,S_{\phi }\\ \left(q\,S_{\phi }+r\,C_{\phi }\right)/C_{\theta } \\ r\,v-q\,w+F_{\mathrm{ext},x}/m\\ p\,w-r\,u+F_{\mathrm{ext},y}/m\\ q\,u-p\,v+F_{\mathrm{ext},z}/m \\ \frac{I_{\mathrm{xz}}\,M_{\mathrm{ext},z}+I_{\mathrm{zz}}\,M_{\mathrm{ext},x} + \left(I_{\mathrm{xx}}\,I_{\mathrm{xz}}-I_{\mathrm{xz}}\,I_{\mathrm{yy}+I_{\mathrm{zx}}\,I_{\mathrm{zz}}} \right)\,p\,q - \left({I_{\mathrm{xz}}}^2 + {I_{\mathrm{zz}}}^2 - I_{\mathrm{yy}}\,I_{\mathrm{zz}} \right)\,q\,r}{I_{\mathrm{xx}}\,I_{\mathrm{zz}}-I_{\mathrm{xz}}\,I_{\mathrm{zx}}} \\ \frac{M_{\mathrm{ext},y}- \left(I_{\mathrm{xx}}-I_{\mathrm{zz}}\right)\,p\,r-I_{\mathrm{zx}}\,p^2+I_{\mathrm{xz}}\,r^2}{I_{\mathrm{yy}}} \\ \frac{I_{\mathrm{xx}}\,M_{\mathrm{ext},z}+I_{\mathrm{zx}}\,M_{\mathrm{ext},x}+\left(I_{\mathrm{xx}}^2+I_{\mathrm{zx}}^2-I_{\mathrm{xx}}\,I_{\mathrm{yy}}\right)\,p\,q+\left(I_{\mathrm{zx}}\,I_{\mathrm{yy}}-I_{\mathrm{xz}}\,I_{\mathrm{xx}}-I_{\mathrm{zx}}\,I_{\mathrm{zz}}\right)\,q\,r}{I_{\mathrm{xx}}\,I_{\mathrm{zz}}-I_{\mathrm{xz}}\,I_{\mathrm{zx}}} \end{array}\right)
+\end{dmath}
+
+\newpage
+
+\section{International Standard Atmosphere (ISA)}
+\begin{dmath}
+k=-0.0065\frac{K}{m}
+\end{dmath}
+
+\begin{dmath}
+P_{0}=101325Pa
+\end{dmath}
+
+\begin{dmath}
+T_{0}=288.15K
+\end{dmath}
+
+\begin{dmath}
+R=287\frac{J}{kgK}
+\end{dmath}
+
+\begin{dmath}
+\gamma=1.4
+\end{dmath}
+
+\begin{dmath}
+k=-0.0065\frac{K}{m}
+\end{dmath}
+
+\begin{dmath}
+T(h <= 11 km)=T_{0}+h\,k
+\end{dmath}
+
+\begin{dmath}
+T(11 km < h < 20 km)=T_0 + k*11000;
+\end{dmath}
+
+\begin{dmath}
+P(h <= 11 km)=P_{0}\,\left(\frac{T}{T_{0}}\right)^{\frac{-g}{R\,k}}
+\end{dmath}
+
+\begin{dmath}
+P(11 km < h < 20 km)=P_{11}\,{\mathrm{e}}^{-\frac{g\,\left(h-h_{11}\right)}{R\,T_{11}}}
+\end{dmath}
+
+\begin{dmath}
+\rho_{air}=\frac{P}{R\,T}
+\end{dmath}
+
+\begin{dmath}
+v_{sound}=\sqrt{\gamma\,R\,T}
+\end{dmath}
+
+\begin{dmath}
+M=\frac{v_{TAS}}{v_{sound}}
+\end{dmath}
+
+\begin{dmath}
+a_{0}=\sqrt{\gamma\,R\,T_{0}}
+\end{dmath}
+
+\begin{dmath}
+\Delta P=P\,\left({\left(\frac{(\gamma-1)}{2}\,M^2+1\right)}^{\frac{\gamma }{\gamma -1}}-1\right)
+\end{dmath}
+
+\begin{dmath}
+v_{\mathrm{CAS}}=\sqrt{\frac{{2a_{0}}^2}{\gamma -1}\left({\left(\frac{\Delta _{P}}{P_{0}}+1\right)}^{\frac{\gamma -1}{\gamma }}-1\right)}
+\end{dmath}
+
+\begin{dmath}
+v_{\mathrm{TAS}}=\sqrt{u^2+v^2+w^2}
+\end{dmath}
+
+\begin{dmath}
+\alpha=\mathrm{atan2}\left(w,u\right)
+\end{dmath}
+
+\begin{dmath}
+\beta=\mathrm{atan2}\left(v,v_{\mathrm{TAS}}\right)
+\end{dmath}
+
+\newpage
+
+\section{Aerodynamic Modeling}
+
+\begin{dmath}
+C_{\mathrm{L}}=C_{\mathrm{L}_{\mathrm{0}}}+C_{\mathrm{L}_{\alpha} }\,\alpha +C_{\mathrm{L}_{\delta_{\mathrm{e}}}}\,\delta _{\mathrm{e}}+\frac{C_{\mathrm{L}_{\dot{\alpha }}}\,\dot{\alpha }\,c}{2\,v_{\mathrm{TAS}}}+\frac{C_{\mathrm{L}_{\mathrm{q}}}\,q\,c}{2\,v_{\mathrm{TAS}}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{D}}=C_{\mathrm{D}_{\mathrm{0}}}+C_{\mathrm{D}_{\alpha}}\,\alpha + C_{\mathrm{D}_{\delta_{\mathrm{e}}}}\,\delta _{\mathrm{e}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{Y}}=C_{\mathrm{Y}_{\beta}}\,\beta +C_{\mathrm{Y}_{\delta_{\mathrm{a}}}}\,\delta _{\mathrm{a}}+C_{\mathrm{Y}_{\delta_{\mathrm{r}}}}\,\delta _{\mathrm{r}}+\frac{C_{\mathrm{Y}_{\mathrm{p}}}\,p\,b}{2\,v_{\mathrm{TAS}}}+\frac{C_{\mathrm{Y}_{\mathrm{r}}}\,r\,b}{2\,v_{\mathrm{TAS}}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{l}}=C_{\mathrm{l}_{\beta}}\,\beta +C_{\mathrm{l}_{\delta_{\mathrm{a}}}}\,\delta _{\mathrm{a}}+C_{\mathrm{l}_{\delta_{\mathrm{r}}}}\,\delta _{\mathrm{r}}+\frac{C_{\mathrm{l}_{\mathrm{p}}}\,p\,b}{2\,v_{\mathrm{TAS}}}+\frac{C_{\mathrm{l}_{\mathrm{r}}}\,r\,b}{2\,v_{\mathrm{TAS}}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{m}}=C_{\mathrm{m}_{0}}+C_{\mathrm{m}_{\alpha}}\,\alpha +C_{\mathrm{m}_{\delta_{\mathrm{e}}}}\,\delta _{\mathrm{e}}+\frac{C_{\mathrm{m}_{\dot{\alpha}}}\,\dot{\alpha }\,c}{2\,v_{\mathrm{TAS}}}+\frac{C_{\mathrm{m}_{\mathrm{q}}}\,q\,c}{2\,v_{\mathrm{TAS}}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{n}}=C_{\mathrm{n}_{\beta}}\,\beta +C_{\mathrm{n}_{\delta_{\mathrm{a}}}}\,\delta _{\mathrm{a}}+C_{\mathrm{n}_{\delta_{\mathrm{r}}}}\,\delta _{\mathrm{r}}+\frac{C_{\mathrm{n}_{\mathrm{p}}}\,p\,b}{2\,v_{\mathrm{TAS}}}+\frac{C_{\mathrm{n}_{\mathrm{r}}}\,r\,b}{2\,v_{\mathrm{TAS}}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{X}_{\mathrm{b}}}=C_{\mathrm{L}}\,\sin\left(\alpha \right)-C_{\mathrm{D}}\,\cos\left(\alpha \right)
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{Y}_{\mathrm{b}}}=C_{\mathrm{Y}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{Z}_{\mathrm{b}}}=-C_{\mathrm{L}}\,\cos\left(\alpha \right)-C_{\mathrm{D}}\,\sin\left(\alpha \right)
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{l}_{\mathrm{b}}}=C_{\mathrm{l}}\,\cos\left(\alpha \right)-C_{\mathrm{n}}\,\sin\left(\alpha \right)
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{m}_{\mathrm{b}}}=C_{\mathrm{m}}
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{n}_{\mathrm{b}}}=C_{\mathrm{n}}\,\cos\left(\alpha \right)+C_{\mathrm{l}}\,\sin\left(\alpha \right)
+\end{dmath}
+
+\begin{dmath}
+Q=\frac{1}{2}\rho _{\mathrm{air}}\,{v_{\mathrm{TAS}}}^2
+\end{dmath}
+
+\begin{dmath}
+F_{\mathrm{aero,x}}=C_{\mathrm{X}_{\mathrm{b}}}\,Q\,S
+\end{dmath}
+
+\begin{dmath}
+F_{\mathrm{aero,y}}=C_{\mathrm{Y}_{\mathrm{b}}}\,Q\,S
+\end{dmath}
+
+\begin{dmath}
+F_{\mathrm{aero,z}}=C_{\mathrm{Z}_{\mathrm{b}}}\,Q\,S
+\end{dmath}
+
+\begin{dmath}
+M_{\mathrm{aero,x}}=C_{\mathrm{l}_{\mathrm{b}}}\,Q\,S\,b-F_{\mathrm{aero,y}}\,z_{\mathrm{CG}}-F_{\mathrm{aero,z}}\,y_{\mathrm{CG}}
+\end{dmath}
+
+\begin{dmath}
+M_{\mathrm{aero,y}}=C_{\mathrm{m}_{\mathrm{b}}}\,Q\,S\,c+F_{\mathrm{aero,x}}\,z_{\mathrm{CG}}-F_{\mathrm{aero,z}}\,c\,\left(\mathrm{CG}_{\mathrm{mac}}-0.25\right)
+\end{dmath}
+
+\begin{dmath}
+M_{\mathrm{aero,z}}=C_{\mathrm{n}_{\mathrm{b}}}\,Q\,S\,b+F_{\mathrm{aero,x}}\,y_{\mathrm{CG}}+F_{\mathrm{aero,y}}\,c\,\left(\mathrm{CG}_{\mathrm{mac}}-0.25\right)
+\end{dmath}
+
+\section{Propulsion Modeling}
+
+\begin{dmath}
+\begin{aligned}
+T_{linear}&=T=\delta_{\mathrm{t}}\,T_{\mathrm{max}}\
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+T_{nonlinear}&=T=\delta _{\mathrm{t}}\,T_{\mathrm{max}}\,{\left(\frac{v_{\mathrm{TAS}}}{v_{\mathrm{ref}}}\right)}^{n_{\mathrm{v}}}\,{\left(\frac{\rho _{\mathrm{air}}}{\rho _{\mathrm{ref}}}\right)}^{n_{\rho }}
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{F}_{\mathrm{thrust}}=\left(\begin{array}{c} F_{\mathrm{thrust,x}}\\ F_{\mathrm{thrust,y}}\\ F_{\mathrm{thrust,z}} \end{array}\right)=\left(\begin{array}{c} T\,\cos\left(\alpha _{\mathrm{F}}\right)\\ 0\\ T\,\sin\left(\alpha _{\mathrm{F}}\right) \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\overrightarrow{M}_{\mathrm{thrust}}=\left(\begin{array}{c} M_{\mathrm{thrust,x}}\\ M_{\mathrm{thrust,y}}\\ M_{\mathrm{thrust,z}} \end{array}\right)=\left(\begin{array}{c} 0\\ T\,\cos\left(\alpha _{\mathrm{F}}\right)\,Z_{\mathrm{F}}-T\,\sin\left(\alpha _{\mathrm{F}}\right)\,X_{\mathrm{F}}\\ 0 \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\newpage
+
+\section{Trimmed condition: level unaccelerated flight at 5000 ft}
+
+\begin{dmath}
+\bm{x_{\mathrm{0}}}=(x_{\mathrm{0}}, y_{\mathrm{0}}, z_{\mathrm{0}}, \phi_{\mathrm{0}}, \theta_{\mathrm{0}}, \psi_{\mathrm{0}}, p_{\mathrm{0}}, q_{\mathrm{0}}, r_{\mathrm{0}}, u_{\mathrm{0}}, v_{\mathrm{0}}, w_{\mathrm{0}})^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\bm{\dot{x}_{\mathrm{0}}}&=f\left(\bm{x_{\mathrm{0}}}\right)=f\left(x_{\mathrm{0}}, y_{\mathrm{0}}, z_{\mathrm{0}}, \phi_{\mathrm{0}}, \theta_{\mathrm{0}}, \psi_{\mathrm{0}}, p_{\mathrm{0}}, q_{\mathrm{0}}, r_{\mathrm{0}}, u_{\mathrm{0}}, v_{\mathrm{0}}, w_{\mathrm{0}}\right)=0
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\bm{y_{\mathrm{0}}}=(x_{\mathrm{0}}, y_{\mathrm{0}}, z_{\mathrm{0}}, \phi_{\mathrm{0}}, \theta_{\mathrm{0}}, \psi_{\mathrm{0}}, u_{\mathrm{0}}, v_{\mathrm{0}}, w_{\mathrm{0}}, p_{\mathrm{0}}, q_{\mathrm{0}}, r_{\mathrm{0}}, \alpha_{\mathrm{0}}, \beta_{\mathrm{0}}, \gamma_{\mathrm{0}}, \zeta_{\mathrm{0}}, v_{\mathrm{TAS}_{\mathrm{0}}}, \rho_{\mathrm{0}})^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\bm{x_{\mathrm{0}}}=(0, 0, -1524, 0, 0, 0, 62.3866, 0, 0, 0, 0, 0)^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\bm{u_{\mathrm{0}}}&=(\delta_{\mathrm{e}_0}, \delta_{\mathrm{a}_0}, \delta_{\mathrm{r}_0}, \delta_{\mathrm{t}_0})^{\mathrm{T}}=(-0.0032115, 0, 0, 0.6792)^{\mathrm{T}}
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\bm{y_{\mathrm{0}}}=(0, 0, -1524, 0, 0, 0, 62.3866, 0, 0, 0, 0, 0, 0, 0, 0, 62.3866, 1.0557)^{\mathrm{T}}
+\end{dmath}
+
+\section{Linearized states differential equations}
+
+\begin{dmath}
+\begin{aligned}
+\bm{x}&=\bm{x}_0+\Delta \bm{x}=\left(\begin{array}{c} x_0 + \Delta x\\ y_0 + \Delta y\\ z_0 + \Delta z\\ \phi_0 + \Delta \phi \\ \theta_0 + \Delta \theta \\ \psi_0 + \Delta \psi \\ u_0 + \Delta u\\ v_0 + \Delta v\\ w_0 + \Delta w\\ p_0 + \Delta p\\ q_0 + \Delta q\\ r_0 + \Delta r \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\bm{u}&=\bm{u}_0+\Delta \bm{u}=\left(\begin{array}{c} \delta_{\mathrm{e}_0}+\Delta \delta_{\mathrm{e}}\\ \delta_{\mathrm{a}_0}+\Delta \delta_{\mathrm{a}}\\ \delta_{\mathrm{r}_0}+\Delta \delta_{\mathrm{r}}\\ \delta_{\mathrm{t}_0}+\Delta \delta_{\mathrm{t}} \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\begin{dmath}
+\begin{aligned}
+\bm{y}&=\bm{y}_0+\Delta \bm{y}=\left(\begin{array}{c} x_0 + \Delta x\\ y_0 + \Delta y\\ z_0 + \Delta z\\ \phi_0 + \Delta \phi \\ \theta_0 + \Delta \theta \\ \psi_0 + \Delta \psi \\ u_0 + \Delta u\\ v_0 + \Delta v\\ w_0 + \Delta w\\ p_0 + \Delta p\\ q_0 + \Delta q\\ r_0 + \Delta r\\ \alpha_0 + \Delta \alpha \\ \beta_0 + \Delta \beta \\ \gamma_0 + \Delta \gamma \\ \zeta_0 + \Delta \zeta\\ v_{\mathrm{TAS}_0} + \Delta v_{\mathrm{TAS}}\\ \rho_0 + \Delta \rho  \end{array}\right)
+\end{aligned}
+\end{dmath}
+
+\newpage
+
+\begin{dmath}
+\Delta \bm{\dot{x}} = A\,\Delta\bm{x} + B\,\Delta\bm{u}
+\end{dmath}
+
+\begin{dmath}
+\Delta\bm{y} = C\,\Delta\bm{x} + D\,\Delta\bm{u}
+\end{dmath}
+
+\begin{dmath}
+A = \left(\begin{array}{cccccccccccc} 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 62.39 & 0 & 1.0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & -62.39 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0\\ 0 & 0 & -0.0001 & 0 & -9.807 & 0 & -0.0477 & 0 & 0.2238 & 0 & 0 & 0\\ 0 & 0 & 0 & 9.807 & 0 & 0 & 0 & -0.1582 & 0 & -0.103 & 0 & -61.8\\ 0 & 0 & -0.0022 & 0 & 0 & 0 & -0.3152 & 0 & -2.64 & 0 & 60.9 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & -0.3765 & 0 & -11.57 & 0 & 2.272\\ 0 & 0 & 0 & 0 & 0 & 0 & 0.0005 & 0 & -0.2494 & 0 & -3.971 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.137 & 0 & -0.3595 & 0 & -1.159 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+B = \left(\begin{array}{cccc} 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 1.91 & 0 & 0 & 1.462\\ 0 & 0 & 5.953 & 0\\ -13.69 & 0 & 0 & 0.0255\\ 0 & -50.19 & 3.178 & 0\\ -33.99 & 0 & 0 & -0.0146\\ 0 & -7.202 & -8.754 & 0 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+C = \left(\begin{array}{cccccccccccc} 1.0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 1.0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1.0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.016 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0.016 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & -0.016 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0.016 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 1.0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0.0002 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+D = \left(\begin{array}{cccccccccccccccccc} 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \end{array}\right)^{\mathrm{T}}
+\end{dmath}
+
+\newpage
+
+\begin{dmath}
+\left(\begin{array}{c} \dot{x}\\ \dot{y}\\ \dot{z}\\ \dot{\phi }\\ \dot{\theta }\\ \dot{\psi }\\ \dot{u}\\ \dot{v}\\ \dot{w}\\ \dot{p}\\ \dot{q}\\ \dot{r} \end{array}\right) = \left(\begin{array}{c} \Delta u\\ 62.39\,\Delta \psi +\Delta v\\ \Delta w-62.39\,\Delta \theta \\ \Delta p\\ \Delta q\\ \Delta r\\ 1.91\,\Delta \delta _{\mathrm{e}}+1.462\,\Delta \delta _{\mathrm{t}}-9.807\,\Delta \theta -0.0477\,\Delta u+0.2238\,\Delta w-0.0001\,\Delta z\\ 5.953\,\Delta \delta _{\mathrm{r}}-0.103\,\Delta p+9.807\,\Delta \phi -61.8\,\Delta r-0.1582\,\Delta v\\ 0.0255\,\Delta \delta _{\mathrm{t}}-13.69\,\Delta \delta _{\mathrm{e}}+60.9\,\Delta q-0.3152\,\Delta u-2.64\,\Delta w-0.0022\,\Delta z\\ 3.178\,\Delta \delta _{\mathrm{r}}-50.19\,\Delta \delta _{\mathrm{a}}-11.57\,\Delta p+2.272\,\Delta r-0.3765\,\Delta v\\ 0.0005\,\Delta u-0.0146\,\Delta \delta _{\mathrm{t}}-3.971\,\Delta q-33.99\,\Delta \delta _{\mathrm{e}}-0.2494\,\Delta w\\ 0.137\,\Delta v-8.754\,\Delta \delta _{\mathrm{r}}-0.3595\,\Delta p-1.159\,\Delta r-7.202\,\Delta \delta _{\mathrm{a}} \end{array}\right)
+\end{dmath}
+
+\newpage
+
+\section{Aircraft Longitudinal Dynamics}
+
+\begin{dmath}
+\Delta \dot{x}=\Delta u
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{z}=\Delta w-62.39\,\Delta \theta
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{\theta }=\Delta q
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{u}=-0.0001\,\Delta z -9.807\,\Delta \theta -0.0477\,\Delta u+0.2388\,\Delta w+ 1.91\,\Delta \delta _{\mathrm{e}}+1.462\,\Delta \delta _{\mathrm{t}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{w}=-0.0022\,\Delta z-0.3152\,\Delta u-2.64\,\Delta w+60.9\,\Delta q-13.69\,\Delta \delta _{\mathrm{e}}+0.0255\,\Delta \delta _{\mathrm{t}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{q}=0.0005\,\Delta u-0.2494\,\Delta w-3.971\,\Delta q-33.99\,\Delta \delta _{\mathrm{e}}-0.0146\,\Delta \delta _{\mathrm{t}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \bm{x} = (\Delta x, \Delta z, \Delta \theta, \Delta u, \Delta w, \Delta q)^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \bm{u} = (\Delta \delta _{\mathrm{e}}, \Delta \delta _{\mathrm{t}})^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\Delta y = \Delta \theta
+\end{dmath}
+
+\begin{dmath}
+\Delta \bm{\dot{x}} = A_{\mathrm{long}}\,\Delta\bm{x} + B_{\mathrm{long}}\,\Delta\bm{u}
+\end{dmath}
+
+\begin{dmath}
+\Delta y = C_{\mathrm{long}}\,\Delta\bm{x} + D_{\mathrm{long}}\,\Delta\bm{u}
+\end{dmath}
+
+\begin{dmath}
+A_{\mathrm{long}}=\left(\begin{array}{cccccc} 0 & 0 & 0 & 1.0 & 0 & 0\\ 0 & 0 & -62.39 & 0 & 1.0 & 0\\ 0 & 0 & 0 & 0 & 0 & 1.0\\ 0 & -0.0001 & -9.807 & -0.0477 & 0.2388 & 0\\ 0 & -0.0022 & 0 & -0.3152 & -2.64 & 60.9\\ 0 & 0 & 0 & 0.0005 & -0.2494 & -3.971 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+B_{\mathrm{long}}=\left(\begin{array}{cc} 0 & 0\\ 0 & 0\\ 0 & 0\\ 1.91 & 1.462\\ -13.69 & 0.0255\\ -33.99 & -0.0146 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{long}}=\left(\begin{array}{cccccc} 0 & 0 & 1.0 & 0 & 0 & 0 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+D_{\mathrm{long}}=\left(\begin{array}{cc} 0 & 0 \end{array}\right)
+\end{dmath}
+
+\newpage
+
+\section{Aircraft Lateral Dynamics}
+
+\begin{dmath}
+\Delta \dot{y}=62.39\,\Delta \psi +\Delta v
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{\phi }=\Delta p
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{\psi }=\Delta r
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{v}=9.807\,\Delta \phi-0.1582\,\Delta v-0.103\,\Delta p -61.8\,\Delta r-5.953\,\Delta \delta _{\mathrm{r}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{p}=-0.3765\,\Delta v-11.57\,\Delta p+2.272\,\Delta r-50.19\,\Delta \delta _{\mathrm{a}}+3.178\,\Delta \delta _{\mathrm{r}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \dot{r}=0.137\,\Delta v-0.3595\,\Delta p-1.159\,\Delta r-7.202\,\Delta \delta _{\mathrm{a}}-8.754\,\Delta \delta _{\mathrm{r}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \bm{x} = (\Delta y, \Delta \phi, \Delta \psi, \Delta v, \Delta p, \Delta r)^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\Delta \bm{u} = (\Delta \delta _{\mathrm{a}}, \Delta \delta _{\mathrm{r}})^{\mathrm{T}}
+\end{dmath}
+
+\begin{dmath}
+\Delta y = \Delta \psi
+\end{dmath}
+
+\begin{dmath}
+\Delta \bm{\dot{x}} = A_{\mathrm{lat}}\,\Delta\bm{x} + B_{\mathrm{lat}}\,\Delta\bm{u}
+\end{dmath}
+
+\begin{dmath}
+\Delta y = C_{\mathrm{lat}}\,\Delta\bm{x} + D_{\mathrm{lat}}\,\Delta\bm{u}
+\end{dmath}
+
+\begin{dmath}
+A_{\mathrm{lat}}=\left(\begin{array}{cccccc} 0 & 0 & 62.39 & 1.0 & 0 & 0\\ 0 & 0 & 0 & 0 & 1.0 & 0\\ 0 & 0 & 0 & 0 & 0 & 1.0\\ 0 & 9.807 & 0 & -0.1582 & -0.103 & -61.8\\ 0 & 0 & 0 & -0.3765 & -11.57 & 2.272\\ 0 & 0 & 0 & 0.137 & -0.3595 & -1.159 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+B_{\mathrm{lat}}=\left(\begin{array}{cc} 0 & 0\\ 0 & 0\\ 0 & 0\\ 0 & -5.953\\ -50.19 & 3.178\\ -7.202 & -8.754 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+C_{\mathrm{lat}}=\left(\begin{array}{cccccc} 0 & 0 & 1.0 & 0 & 0 & 0 \end{array}\right)
+\end{dmath}
+
+\begin{dmath}
+D_{\mathrm{lat}}=\left(\begin{array}{cc} 0 & 0 \end{array}\right)
+\end{dmath}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
